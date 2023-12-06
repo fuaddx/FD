@@ -1,0 +1,43 @@
+﻿@model BlogListVM
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Create Slider</h6>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedAt"></label>
+                <input asp-for="CreatedAt" class="form-control">
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UptadedAt"></label>
+                <input asp-for="UptadedAt" class="form-control">
+                <span asp-validation-for="UptadedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author"></label>
+                <input asp-for="Author" class="form-control">
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+
+            <button class="btn btn-success">Submit!</button>
+
+        </form>
+    </div>
+</div>
+
+
