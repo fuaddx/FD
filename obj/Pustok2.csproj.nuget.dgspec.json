@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\birinci novbe\\Desktop\\Pustok2\\Pustok2.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\FD\\Pustok2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\birinci novbe\\Desktop\\Pustok2\\Pustok2.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\FD\\Pustok2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\birinci novbe\\Desktop\\Pustok2\\Pustok2.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\FD\\Pustok2.csproj",
         "projectName": "Pustok2",
-        "projectPath": "C:\\Users\\birinci novbe\\Desktop\\Pustok2\\Pustok2.csproj",
-        "packagesPath": "C:\\Users\\birinci novbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\birinci novbe\\Desktop\\Pustok2\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\FD\\Pustok2.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\FD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\birinci novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -37,22 +37,26 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.25, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.25, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.16, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

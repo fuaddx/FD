@@ -2,6 +2,8 @@
 using Pustok2.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Pustok2.ViewModel.BlogVM;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace Pustok2.Areas.Admin.Controllers
 {
@@ -20,9 +22,8 @@ namespace Pustok2.Areas.Admin.Controllers
                 Title = c.Title,
                 Description =c.Description,
                 CreatedAt =c.CreatedAt,
+                Author=c.Author,
                 UptadedAt =c.UptadedAt,
-                Author =c.Author
-
             }).ToListAsync());
         }
 
@@ -42,9 +43,16 @@ namespace Pustok2.Areas.Admin.Controllers
                 ModelState.AddModelError("Title", vm.Title + " already exist");
                 return View(vm);
             }
-            await _db.Blogs.AddAsync(new Models.Blog { Title = vm.Title });
+            await _db.Blogs.AddAsync(new Models.Blog { 
+                Title = vm.Title,
+                Description = vm.Description,
+                CreatedAt = vm.CreatedAt,
+                UptadedAt=vm.UptadedAt,
+                AuthorId=vm.AuthorId,
+            });
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        
     }
 }

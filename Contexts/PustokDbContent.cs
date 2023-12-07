@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pustok2.Models;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using Pustok2.Models;
-
 namespace Pustok2.Contexts
 {
     public class PustokDbContent : DbContext

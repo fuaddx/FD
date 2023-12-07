@@ -35,7 +35,9 @@ namespace Pustok2.Areas.Admin.Controllers
                 ModelState.AddModelError("Name", vm.Name + " already exist");
                 return View(vm);
             }
-            await _db.Categories.AddAsync(new Models.Category { Name = vm.Name });
+            await _db.Categories.AddAsync(new Models.Category {
+                Name = vm.Name,
+            });
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

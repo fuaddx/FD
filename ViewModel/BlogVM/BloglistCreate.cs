@@ -1,4 +1,6 @@
-﻿namespace Pustok2.ViewModel.BlogVM
+﻿using Pustok2.Models;
+
+namespace Pustok2.ViewModel.BlogVM
 {
     public class BloglistCreate
     {
@@ -6,6 +8,7 @@
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UptadedAt { get; set; }
-        public string Author { get; set; }
+        public Author? Author { get; set; }
+        public int AuthorId { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Pustok2.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Pustok2.ViewModel.BlogVM
 {
@@ -9,6 +10,8 @@ namespace Pustok2.ViewModel.BlogVM
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UptadedAt { get; set; }
-        public Author Author { get; set; }
+        public Author? Author { get; set; }
+        [ForeignKey(nameof(Author))]
+        public int AuthorId { get; set; }
     }
 }

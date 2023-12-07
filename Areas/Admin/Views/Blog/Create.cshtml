@@ -4,7 +4,7 @@
 }
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Create Slider</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Create Blog</h6>
     </div>
     <div class="card-body">
         <form asp-action="Create" method="post">
@@ -29,8 +29,10 @@
                 <span asp-validation-for="UptadedAt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Author"></label>
-                <input asp-for="Author" class="form-control">
+                <label asp-for="Author">Authors</label>
+                <select class="form-control" asp-for="Author" asp-items="@ViewBag.AuthorsList">
+                    <option disabled selected>Select Author</option>
+                </select>
                 <span asp-validation-for="Author" class="text-danger"></span>
             </div>
 
